@@ -1,0 +1,64 @@
+.bgPreview{
+    margin-left:50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgPreview div{
+    width: 50%;
+}
+
+.bgPreview h1{
+    padding-top: 15%;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.bgPreview .center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bgPreview .titre{
+    width: 100%;
+}
+
+.bgPreview .titre h1{
+    padding-top: 3%;
+}
+
+.bgPreview .titre .marqueModele{
+    text-align: left;
+}
+
+
+.bgPreview .titre .h1Prix{
+    text-align: right;
+}
+
+.bgPreview *{
+    font-size: 2rem;
+}
+
+.bgPreview .title{
+    font-size: 4rem;
+}
+
+.imgProfile {
+    width: 100%;
+    height: 32rem;
+    border-radius: 15px;
+    display: block;
+}
+
+@media (max-width: 1980px) {
+    .bgPreview div{
+        width: 70%;
+    }
+
+    .bgPreview *{
+        font-size: 1.5rem;
+    }
+   
+}

@@ -1,0 +1,384 @@
+.productcardGestion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--backColor);
+    box-sizing: border-box;
+    box-shadow: var(--boxShadow);
+    display: flex;
+    justify-content: end;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.size,
+.price,
+.desc {
+    margin: 2%;
+    font: var(--mainFont);
+    padding: .5%;
+    width: 30%;
+}
+
+.size,
+.price,
+.desc {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--mainColor);
+    width: 75%;
+}
+
+.size:focus,
+.price:focus,
+.desc:focus {
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.brand,
+.modele {
+    background-color: var(--backColor);
+    padding: calc(.5% - 1px) calc(.9% - 1px) calc(.5% - 1px) calc(.5% - 1px);
+    color: white;
+}
+
+
+.brand:hover,
+.modele:hover {
+    border-color: var(--mainColor);
+}
+
+.brand:focus,
+.modele:focus {
+    outline: none;
+}
+
+.brand,
+.modele,
+.prixGestion {
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+
+.brandSizeLigne {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardGestion, .sellSneakerCard {
+    width: 25%;
+    margin: 2rem;
+    background-color: var(--backColor);
+    border-radius: 15px;
+    padding: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: var(--boxShadow);
+    position: relative;
+}
+
+.centerGestion {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.titreTransaction {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 70px;
+    padding: 0;
+}
+
+.price,
+.size,
+.desc {
+    color: var(--mainColor);
+    font-size: 1.5rem;
+}
+
+
+.brand {
+    margin-left: 0;
+}
+
+.prixGestion {
+    color: var(--mainColor);
+}
+
+.price {
+    color: var(--mainColor);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--mainColor);
+    width: 75%;
+}
+
+.size {
+    width: 20%;
+}
+
+.descGestion {
+    margin-top: 2%;
+    text-align: left;
+}
+
+.desc {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.selectImg {
+    color: var(--mainColor);
+    font: var(--mainFont);
+    font-size: 1rem;
+}
+
+.submitTransaction {
+    width: 100%;
+    margin-bottom: 3%;
+
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 15px;
+    border: none;
+
+}
+
+
+.submitTransaction:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.errors {
+    margin-top: 1%;
+    color: var(--error);
+    font: var(--mainFont);
+    font-size: 100%;
+}
+
+.ligneErreurs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.brandDiv,
+.modeleDiv,
+.prixDiv {
+    width: 33%;
+    display: grid;
+    align-items: center;
+}
+
+.sizeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.h1Size {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.postedByGestion{
+    border: none;
+}
+
+.favoritesEmpty{
+    justify-content: center;
+    width: 100%;
+    padding-top: 0;
+}
+
+.noFavorites{
+    color: var(--mainColor);
+    font: var(--mainFont);
+    font-size: 3rem;
+}
+
+.cardGestionFavorites{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+}
+
+.logo{
+    margin: 0;
+}
+
+.remove,
+.invertedRemove {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.remove,
+.invertedRemove:hover {
+  background-image: url("../img/removeSelected.png");
+}
+
+.remove:hover,
+.invertedRemove {
+  background-image: url("../img/removeNotSelected.png");
+
+}
+.linkStar {
+  margin-left: 10%;
+  padding-top: 2%;
+  width: 20%;
+}
+
+.starGestion{
+    border-top: 1px solid var(--mainColor);
+    display: flex;
+    align-items: center;
+}
+
+.cancelPurchase{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.acceptPurchase, .denyPurchase{
+    width: 46%;
+}
+
+.acceptPurchase{
+    background-color: #00bb64;
+    margin-right: 2%;
+}
+
+.denyPurchase{
+    background-color: #dc3545;
+    margin-left: 2%;
+}
+
+.acceptDeny{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.meetPoint{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.white{
+    color: white;
+}
+
+.anchors{
+    z-index: 10;
+}
+
+.imgSellSneaker {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+
+
+@media (max-width: 1980px) {
+    .card {
+        width: calc(30% - 4rem);
+    }
+
+    .cardGestion{
+        width: 30%;
+    }
+
+    .cardGestionFavorites{
+        width: 70%;
+    }
+   
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .cardGestion {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .brandSizeLigne {
+        flex-direction: column;
+        align-items: center;
+    }
+    .size, .price, .desc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .cardGestion {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .size, .price, .desc {
+        font-size: 14px;
+    }
+    .logo {
+        width: 30%;
+    }
+    .titreTransaction {
+        font-size: 2rem;
+    }
+    .submitTransaction {
+        width: 50%;
+    }
+    .starGestion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .postedByGestion {
+        margin-top: 1rem;
+    }
+    .cancelPurchase {
+        margin-top: 2rem;
+    }
+    .acceptDeny {
+        flex-direction: column;
+        align-items: center;
+    }
+    .meetPoint {
+        margin-top: 2rem;
+    }
+}

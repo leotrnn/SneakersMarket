@@ -1,0 +1,38 @@
+Anonyme :
+uniquement consulter les chaussures
+
+Pages :
+Chercher une chaussure par nom / marque
+détail paires
+connexion
+profil
+chaussures favorites
+gestion chaussures achetées et chaussures a vendre
+
+admin :
+connexion (???) // après verif pas de connexion dans admin
+gestion users avec chaussures achetées / vendues
+gestion point rencontre
+gestion etablissements
+
+utilisateur :
+page accueil listing chaussures
+10 paires visibles pagination
+paire de chaussure visible si etat visible
+chercher paire par nom (input text)
+filter paire par marque (select option)
+détail
+
+anonyme meme droit utilisateur (???????)
+
+inscription :
+nom, prenom, mdp, adresse mail
+mdp : min 8 car, chiffre lettre maj car special
+mot de passe hashé
+pas mail existant
+
+login :
+email, mdp
+
+
+

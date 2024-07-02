@@ -1,0 +1,191 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: var(--backColor);
+  box-sizing: border-box;
+  box-shadow: var(--boxShadow);
+  display: flex;
+  justify-content: end;
+}
+
+.info{  
+  width: 50%;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.titleForm{
+  padding: 0;
+  margin-bottom: .5%;
+  font-size: 55px;
+}
+
+.email, .password, .passwordRegister, .confirmPasswordRegister, .submitLogin, .name, .surname{
+  margin: 2%;
+  font: var(--mainFont);
+  padding: .5%;
+  width: 30%;
+}
+
+.email, .password, .passwordRegister, .confirmPasswordRegister, .name, .surname{
+  color: white;
+  background-color: transparent;
+  border:none;
+  border-bottom: 1px solid var(--mainColor);
+  width: 70%;
+}
+
+.email:focus, .password:focus, .name:focus, .passwordRegister:focus, .confirmPasswordRegister:focus, .surname:focus{
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+.submitLogin{
+  margin-left: -.5%;
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 15px;
+  border: none;
+}
+
+.submitLogin:hover{
+  cursor: pointer;
+  opacity: .9;
+}
+
+.submitDiv{
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.logoLogin{
+  width: 20%;
+}
+
+.registerLink, .loginLink{
+  font: var(--mainFont);
+  color: var(--mainColor);
+}
+
+.goBackLink {
+  margin-top: 5%;
+  margin-left: 3%;
+  font: var(--mainFont);
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.canvas-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.productCard .container .animation1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--mainColor);
+  transform: rotateY(-8deg);
+  transform-origin: left;
+  perspective: 100px;
+  transition: ease all 0.3s 0.2s;
+}
+
+.ligne{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ligne .name, .errorNameRegister, .passwordRegister{
+  margin: 0;
+  margin-right: 2%;
+}
+
+.ligne .email{
+  margin: 0;
+  margin-left: 2%;
+}
+
+.email, .surname{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.errorLogin, .errorEmailRegister, .errorNameRegister, .errorPasswordRegister, .errorSchoolRegister, .errorSurnameRegister{
+  width: 70%;
+  color: #dc3545;
+  font: var(--mainFont);
+  font-size: 100%;
+}
+
+.ligne .email{
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.ligne .password{
+  margin-left: 2%;
+  margin-right: 0;
+}
+
+.school {
+  background-color: var(--backColor);
+  padding: calc(.5% - 1px) calc(.9% - 1px) calc(.5% - 1px) calc(.5% - 1px);
+  color: white;
+}
+
+.school:hover {
+  border-color: var(--mainColor);
+}
+
+.school:focus {
+  outline: none;
+}
+
+.school, .errorSurnameRegister{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.errorSchoolRegister{
+  margin-right: 2%;
+}
+
+.imgDiv{
+  display: flex;
+  align-items: center;
+  color: var(--mainColor);
+  font: var(--mainFont);
+  font-size: 1rem;
+}

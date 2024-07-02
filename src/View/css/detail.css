@@ -1,0 +1,287 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  perspective: 100px;
+}
+
+.productCard .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: var(--backColor);
+  box-sizing: border-box;
+  box-shadow: var(--boxShadow);
+}
+
+
+
+.productCard .container .info .attribs .attrib .options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.productCard .container .info .attribs .attrib .options .option {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 10px 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: darkgray;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  cursor: pointer;
+  user-select: none;
+  transition: ease all 0.3s;
+}
+
+
+
+.productCard .container .colorLayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--mainColor);
+  transform: rotateY(-8deg);
+  transform-origin: right;
+  perspective: 100px;
+  transition: ease all 0.3s 0.2s;
+}
+
+.productCard .container .preview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  user-select: none;
+  overflow: hidden;
+  transition: ease all 0.3s;
+}
+
+.productCard .container .preview .brand {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 200px;
+  font-size: 230px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: ease all 0.3s;
+}
+
+.productCard .container .preview .img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.productCard .container .preview .img img {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(50%, -10%) rotate(-20deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: ease all 0.3s;
+}
+
+.productCard .container .preview .img img.activ {
+  opacity: 1;
+  transform: none;
+}
+
+.price,
+.desc {
+  color: var(--mainColor);
+}
+
+.namePrice {
+  margin-top: .5%;
+  font-size: 30px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.namePrice * {
+  padding-top: 0;
+  margin-right: 5%;
+  padding-bottom: 0;
+}
+
+.desc {
+  margin: 0;
+  padding: 0;
+}
+
+.submit {
+  float: right;
+  background-color: var(--mainColor);
+  color: white;
+  padding: .5%;
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.size {
+  margin-bottom: .5%;
+  background-color: var(--backColor);
+  padding: calc(.5% - 1px) calc(.9% - 1px) calc(.5% - 1px) calc(.5% - 1px);
+  color: white;
+}
+
+.size:hover {
+  border-color: var(--mainColor);
+}
+
+.size:focus {
+  outline: none;
+}
+
+.form {
+  width: 50%;
+}
+
+.back {
+  margin-top: 2%;
+  margin-right: .5%;
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+.outOfStock {
+  font-size: 35px;
+  text-align: center;
+}
+
+.aOut {
+  text-align: center;
+}
+
+.msgOut {
+  text-align: center;
+  width: 50%;
+}
+
+.goBackLink {
+  margin-left: 0;
+  font: var(--mainFont);
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.fa {
+  margin-right: .3%;
+}
+
+.star,
+.invertedStar {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.star,
+.invertedStar:hover {
+  background-image: url("../img/starNotSelected.png");
+}
+
+.star:hover,
+.invertedStar {
+  background-image: url("../img/starSelected.png");
+
+}
+.linkStar {
+  margin-right: 2%;
+  width: 10%;
+  height: 3rem;
+}
+.attrib {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.errorNotConnected, .errorMeetPoint{
+  width: 70%;
+  color: #dc3545;
+  font: var(--mainFont);
+  font-size: 100%;
+}
+
+.customMessages {
+  color: white;
+  padding-left: 3%;
+  font: var(--mainFont);
+  font-size: 2rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+}
+
+.customSuccess{
+  background-color: #00bb64;
+}
+
+.customError{
+  background-color: #dc3545;
+}
+
+.meetPoint{
+  float: left;
+}
+
+.moitie{
+  width: 70%;
+  justify-content: end;
+  display: flex;
+  align-items: center ;
+}
+
+.errorMeetPoint{
+  margin-top: 5%;
+}

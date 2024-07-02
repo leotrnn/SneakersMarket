@@ -1,0 +1,127 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--mainColor);
+    padding: 1em 0;
+}
+
+.headerNav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navA {
+    font: var(--mainFont);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navA:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+li {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.avatarHeader {
+    outline: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;
+}
+
+
+.logoHeader {
+    border: none;
+    width: auto;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.searchBar {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: var(--mainColor);
+    font: var(--mainFont);
+    color: white
+}
+
+.searchBar::placeholder {
+    color: white;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.customMessages {
+    color: white;
+    padding-left: 3%;
+    font: var(--mainFont);
+    font-size: 2rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+
+.green{
+    background-color: var(--success);
+
+}
+
+.red{
+    background-color: var(--error);
+}
+
+.searchBarLi {
+    display: flex;
+    align-items: center
+}
+
+.linkProfile{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    
+}
+
+.linkProfile p{
+    font: var(--secondFont);
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nameUser{
+    font: var(--mainFont);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+}

@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.firstPart, .secondPart{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.firstPart {
+    justify-content: center;
+    align-items: center;  
+}
+
+.secondPart{
+    background-color: var(--backColor);
+}
+
+.titleContainer {
+    position: relative;
+    text-align: center;
+}
+
+.titleHome {
+    z-index: 1;
+    font-size: 160px;
+    color: var(--mainColor);
+    text-shadow: 0 0 30px var(--backColor);
+}
+
+.circleTop, .circleBottom, .circleLeft, .circleRight{
+    position: absolute;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 65%;
+}
+
+.circleTop {  
+    top: 0;
+    left: 0;  
+    border-bottom-right-radius: 50%;
+}
+
+.circleBottom{
+    
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 50%;
+}
+
+.circleRight {
+    top: 100%;
+    right: 0;
+    border-bottom-left-radius: 50%;
+}
+
+.circleLeft {
+    top: 135%;
+    left: 0;
+    border-top-right-radius: 50%;
+}
+
+header {
+    box-shadow: var(--boxShadow);
+}
+
+.imgDesc{
+    width: 20%;
+}
+
+.pfp{
+    border-radius: 50%;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+}
+
+.titleDesc{
+    font-size: 300%;
+    text-shadow: 0 0 15px var(--backColor);
+
+}
+
+.ligneDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDesc{
+    font-weight: bold;
+    margin-left: 2%;
+    color: white;
+    font-size: 170%;
+}
+
+@media (max-width: 1980px) {
+    .titleDesc{
+        font-size: 200%;
+    }
+
+    .textDesc{
+        font-size: 130%;
+    }
+   
+}

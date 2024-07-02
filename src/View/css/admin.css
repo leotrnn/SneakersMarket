@@ -1,0 +1,225 @@
+.imgUsers {
+    height: 25rem;
+    width: 100%;
+}
+
+.cardUsers {
+    width: 20%;
+}
+
+.searchBarUsers {
+    background-color: var(--backColor);
+    margin-left: 6%;
+    width: 20%;
+}
+
+.gestionUsers {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.gestionUsers form input[type="submit"] {
+    width: 100%;
+}
+
+.gestionUsers form {
+    width: 45%;
+}
+
+.tableSchools,
+.tableMeetPoints {
+    font: var(--mainFont);
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.tableSchools tr:first-child,
+.tableMeetPoints tr:first-child {
+    background-color: var(--mainColor);
+}
+
+.tableSchools th,
+.tableMeetPoints th {
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--mainColor);
+}
+
+.tableSchools th:first-child {
+    width: 75%;
+}
+
+.tableMeetPoints th:last-child {
+    width: 30%;
+}
+
+.tableSchools .submitMeetPoints,
+.submitMeetPoints .submit,
+.tableMeetPoints .submitMeetPoints,
+.tableMeetPoints .submitMeetPoints .submit {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.tableSchools th .submit,
+.tableMeetPoints th .submit {
+    justify-content: center;
+    margin: 2%;
+}
+
+.addMeetPoint {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.errorMsg {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.errorMsg * {
+
+    color: #dc3545;
+    font: var(--mainFont);
+    font-size: 100%;
+}
+
+
+.tableMeetPoints th .locked,
+.tableSchools th .locked {
+    background-color: gray;
+}
+
+.editInfoMeetPoint {
+    width: 90%;
+}
+
+
+.locked:hover {
+    cursor: default;
+    opacity: 1;
+}
+
+.cardGestion {
+    width: 75%;
+}
+
+.tableMeetPoints th:nth-child(2){
+    width: 40%;
+}
+
+#confirmModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: var(--backColor);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#confirmDelete {
+    background-color: var(--error);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#cancelDelete {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1980px) {
+    .cardUsers {
+        width: calc(30% - 4rem);
+    }
+
+    .anchors {
+        top: 15%;
+    }
+
+    .title {
+        padding-top: 15%;
+    }
+
+    .tableSchools th .submitMeetPoints,
+    th .submitMeetPoints .submit,
+    .tableMeetPoints th .submitMeetPoints,
+    .tableMeetPoints th .submitMeetPoints .submit {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 4rem);
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: calc(100% - 2rem);
+        margin: 1rem;
+    }
+
+    .filtres {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .marques {
+        font-size: 20px;
+    }
+
+    .center {
+        text-align: left;
+    }
+
+    .imgUsers {
+        width: auto;
+    }
+
+    .titre {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

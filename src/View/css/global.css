@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --mainColor: rgb(168, 168, 225);
+    --backColor: rgb(36, 36, 36);
+
+    --mainFont: normal normal 600 1.3em/1.6em 'Outfit', sans-serif;
+    --secondaryFont: normal normal 400 1em/1em 'Outfit', sans-serif;
+    --thirdFont: normal normal 300 1em/1.55em 'Outfit', sans-serif;
+
+    --error: #dc3545;
+    --success:#00bb64;
+
+    /* https://getcssscan.com/css-box-shadow-examples - Box shadow n°10 */
+    --boxShadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    background-color: var(--backColor);
+    font-family: 'Outfit';
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+h1,
+input[type="submit"],
+select {
+    font: var(--mainFont);
+}
+
+h1 {
+    color: white;
+    padding: 1.2em 0;
+}
+
+h2 {
+    font: var(--secondaryFont);
+    color: white;
+}
+
+p {
+    font: var(--thirdFont);
+    color: var(--mainColor);
+}
+
+span {
+    color: white;
+}
+
+.customSuccess {
+    background-color: var(--success);
+}
+
+.customError {
+    background-color: var(--error);
+}
